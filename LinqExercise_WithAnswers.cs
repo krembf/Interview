@@ -118,7 +118,7 @@ namespace CodeSmorgasbord.Linq
             //Eager Execution
             IList<int> numbers = new List<int>(new int[] { 1, 2 });
 
-            var powers = numbers.Select(n => n * n).ToList();
+            var powers = numbers.Select(n => n * n);
 
             numbers.Add(3);
 
