@@ -100,7 +100,7 @@ namespace CodeSmorgasbord
             //Eager Execution
             IList<int> numbers = new List<int>(new int[] { 1, 2 });
 
-            var powers = numbers.Select(n => n * n);
+            var powers = numbers.Select(n => n * n).ToList();
 
             numbers.Add(3);
 
